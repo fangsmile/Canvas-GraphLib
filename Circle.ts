@@ -1,7 +1,7 @@
 import { Shape } from "./Shape";
 import { Point } from "./Point";
 import { RenderStyle } from "./OptionConfig";
-import { CanvasContext } from "./../../../../../build/drawing/CanvasContext";
+import { CanvasContext } from "./CanvasContext";
 import { XlMath } from "./XlMath";
 export class CircleConfig {
     startDegree: number = 0;
