@@ -2,7 +2,7 @@ import { Point } from "./Point";
 import { XlMath } from "./XlMath";
 import { GraphLib } from "./GraphLib";
 import { RenderStyle, RotateConfig, RegionConfig } from "./OptionConfig";
-import { CanvasContext } from "./../../../../../build/drawing/CanvasContext";
+import { CanvasContext } from "./CanvasContext";
 export class Shape {
     type: string = "Shape";
     className: string = "Shape";
