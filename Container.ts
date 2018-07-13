@@ -1,6 +1,6 @@
 import { Shape } from "./Shape";
 import { Point } from "./Point";
-import { CanvasContext } from "./../../../../../build/drawing/CanvasContext";
+import { CanvasContext } from "./CanvasContext";
 export class Container {
     type: string = "Container";
     className: string = "Container";
