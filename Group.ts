@@ -1,5 +1,5 @@
 import { Container } from "./Container";
-import {CanvasContext} from "./../../../../../build/drawing/CanvasContext";
+import {CanvasContext} from "./CanvasContext";
 export class Group extends Container{
     type: string = "Group";
     className: string = "Group";
