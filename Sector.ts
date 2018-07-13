@@ -1,7 +1,7 @@
 import { Shape } from "./Shape";
 import { Point } from "./Point";
 import { RenderStyle } from "./OptionConfig";
-import { CanvasContext } from "./../../../../../build/drawing/CanvasContext";
+import { CanvasContext } from "./CanvasContext";
 export class SectorConfig {
     startDegree: number = 0;
     endDegree: number = 360;
