@@ -1,6 +1,6 @@
 import { Shape } from "./Shape";
 import { Point } from "./Point";
-import { CanvasContext } from "./../../../../../build/drawing/CanvasContext";
+import { CanvasContext } from "./CanvasContext";
 /* @param {Object} config
    * @param {String} [config.fontFamily] default is Arial
    * @param {Number} [config.fontSize] in pixels.  Default is 12
