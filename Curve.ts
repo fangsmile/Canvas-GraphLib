@@ -3,7 +3,7 @@ import { Shape } from "./Shape";
 import { Point } from "./Point";
 import { RenderStyle } from "./OptionConfig";
 import { XlMath } from "./XlMath";
-import { CanvasContext } from "./../../../../../build/drawing/CanvasContext";
+import { CanvasContext } from "./CanvasContext";
 export class Curve extends Shape {
     className: string = "Curve";
     startPoint: Point;
