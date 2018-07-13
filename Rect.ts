@@ -1,6 +1,6 @@
 import { Shape } from "./Shape";
 import { RenderStyle, RotateConfig, RegionConfig } from "./OptionConfig";
-import { CanvasContext } from  "../../../../../build/drawing/CanvasContext";;
+import { CanvasContext } from  "./CanvasContext";;
 export class Rect extends Shape {
     className: string = "Rect";
     constructor(renderStyle: RenderStyle, rotateConfig: RotateConfig = null, regionConfig: RegionConfig = null) {
