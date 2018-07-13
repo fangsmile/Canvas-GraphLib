@@ -1,5 +1,5 @@
 import { Point } from "./Point";
-import {CanvasContext} from "./../../../../../build/drawing/CanvasContext";
+import {CanvasContext} from "./CanvasContext";
 export class ArrowHead {
     centerAngle: number;//与圆心所成角度
     basePoint: Point;
