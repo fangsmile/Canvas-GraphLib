@@ -2,7 +2,7 @@ import { Shape } from "./Shape";
 import { GraphLib } from "./GraphLib";
 import { Point } from "./Point";
 import { RenderStyle } from "./OptionConfig";
-import { CanvasContext } from "./../../../../../build/drawing/CanvasContext";
+import { CanvasContext } from "./CanvasContext";
 export class Coordinate extends Shape {
     type: string = "Shape";
     className: string = "Coordinate";
