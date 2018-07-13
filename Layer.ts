@@ -1,5 +1,5 @@
 import { Group } from "./Group";
-import { CanvasContext } from "./../../../../../build/drawing/CanvasContext";
+import { CanvasContext } from "./CanvasContext";
 import { Container } from "./Container";
 import { Point } from "./Point";
 import { XlMath } from "./XlMath";
