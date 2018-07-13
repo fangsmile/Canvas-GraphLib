@@ -3,13 +3,12 @@ import { Point } from "./Point";
 import { RenderStyle } from "./OptionConfig";
 
 import { Edge } from './Edge'
-import {CanvasContext} from "./../../../../../build/drawing/CanvasContext";
+import {CanvasContext} from "./CanvasContext";
 import { XlMath } from "./XlMath";
 export class Polygon extends Shape {
     
     className: string = "Polygon";
     points: Array<Point> = [];
-    edges: Array<Edge> = [];
 
     constructor(renderStyle: RenderStyle, colorKey:string=null) {
         super(renderStyle, null, null, colorKey);
@@ -34,24 +33,11 @@ export class Polygon extends Shape {
 
     addPoint(p: Point) {
         this.points.push(p);
-        this.updateEdge();
         return this;
     }
-    //更新边数据，因为边变化的可能性很小，所以直接清空重建
-    updateEdge() {
-        var count = this.points.length;
-        this.edges=[];
-        if (count > 2) {
-            for (var i = 0; i <=count - 2; i++) {
-                let edge = new Edge(this.points[i], this.points[i + 1]);
-                this.edges.push(edge);
-            }
-            this.edges.push(new Edge(this.points[count - 1], this.points[0]));
-        }
-    }
+   
     removePoint() {
         this.points.pop();
-        this.updateEdge();
         return this;
     }
     getPoints() {
@@ -59,11 +45,9 @@ export class Polygon extends Shape {
     }
     changePoints(points: Array<Point>) {
         this.points = points;
-        this.updateEdge();
     }
     changePointByIndex(p: Point, index: number) {
         this.points[index] = p;
-        this.updateEdge();
     }
     changePoint(pOld: Point, pNew: Point) {
         var count = this.points.length;
@@ -74,7 +58,6 @@ export class Polygon extends Shape {
                 break;
             }
         }
-        this.updateEdge();
     }
     moveBy(diffX: number, diffY: number) {
         super.moveBy(diffX, diffY);
@@ -83,7 +66,6 @@ export class Polygon extends Shape {
             this.points[i].x = this.points[i].x + diffX;
             this.points[i].y = this.points[i].y + diffY;
         }
-        this.updateEdge();
     }
     getPointRange(){
         let rect = XlMath.rectPoint(this.getPoints());
