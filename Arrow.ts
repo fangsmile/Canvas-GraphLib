@@ -6,7 +6,7 @@ import { Point } from "./Point";
 import { RenderStyle } from "./OptionConfig";
 import { Shape } from "./Shape";
 import { XlMath } from "./XlMath";
-import { CanvasContext } from "./../../../../../build/drawing/CanvasContext";
+import { CanvasContext } from "./CanvasContext";
 export class Arrow extends Shape {
     className: string = "Arrow";
     arrowHead: ArrowHead;//箭头
