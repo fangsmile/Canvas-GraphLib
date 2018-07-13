@@ -2,7 +2,7 @@
 import { Shape } from "./Shape";
 import { Point } from "./Point";
 import { RenderStyle } from "./OptionConfig";
-import {CanvasContext} from "./../../../../../build/drawing/CanvasContext";
+import {CanvasContext} from "./CanvasContext";
 //使用Path类就可以了，Line可以去除
 export class Line extends Shape {
     className: string = "Line";
